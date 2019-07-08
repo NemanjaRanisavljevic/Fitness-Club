@@ -8,6 +8,7 @@ import { RootComponentComponent } from './root-component/root-component.componen
   declarations: [RootComponentComponent],
   imports: [
     CommonModule,
+    
     RootRoutingModule
   ]
 })

@@ -8,15 +8,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { RootComponentComponent } from './root/root-component/root-component.component';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { TimetableComponent } from './timetable/timetable/timetable.component';
 
-// import { BrowserModule } from '@angular/platform-browser';
-// import { NgModule } from '@angular/core';
 
-// import { AppRoutingModule } from './app-routing.module';
-// import { AppComponent } from './app.component';
-// import { Routes, RouterModule } from '@angular/router';
-// import { RootModule } from './root/root.module';
-// import { HomeModule } from './home/home.module';
+
+
 
 const routes : Routes = [
   {
@@ -33,7 +29,57 @@ const routes : Routes = [
         loadChildren: './home/home.module#HomeModule'  
       }
     ]
-  }
+  },
+
+  {
+    path : 'timetable',
+    redirectTo: 'timetable',
+    pathMatch: 'full'
+  },
+  {
+    path: 'timetable',
+    component: RootComponentComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './timetable/timetable.module#TimetableModule'  
+      }
+    ]
+  },
+
+  {
+    path : 'galerija',
+    redirectTo: 'galerija',
+    pathMatch: 'full'
+  },
+  {
+    path: 'galerija',
+    component: RootComponentComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './galerija/galerija.module#GalerijaModule'  
+      }
+    ]
+  },
+  
+  {
+    path : 'kontakt',
+    redirectTo: 'kontakt',
+    pathMatch: 'full'
+  },
+  {
+    path: 'kontakt',
+    component: RootComponentComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './kontakt/kontakt.module#KontaktModule'  
+      }
+    ]
+  },
+
+ 
 ]
 
 
@@ -41,10 +87,13 @@ const routes : Routes = [
   declarations: [
     AppComponent,
     RootComponentComponent,
+    
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
    
   ],
   providers: [],

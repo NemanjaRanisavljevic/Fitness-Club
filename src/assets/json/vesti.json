@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "naslov":"Meditacija za pocetinike",
+        "sadrzaj":"Ako ste često nezadovoljni, uplašeni ili pod stresom i to vas iscrpljuje, ovo može da vam pomogne. Verovatno vam se dešavalo da sedite na plaži, gledate ispred sebe u more, opušteni, ne razmišljate ni o čemu konkretno, posmatrate šta se dešava oko vas. Ovakvo stanje svesnog prisustva, oslobođeno od misli i emocija, naziva se meditacija.",
+        "slika":"page1-img1.jpg"
+    },
+    {
+        "id":2,
+        "naslov":"Popust za studente",
+        "sadrzaj":"Svesni smo koliko studenti sede spremajuci obimne ispite, zbog toga smo odlucili da svakom studentu koji donese indeks na uvid dajemo 30 % popusta na mesecnu clanarinu.",
+        "slika":"page2-img2.jpg"
+    },
+    {
+        "id":3,
+        "naslov":"Aerobik",
+        "sadrzaj":"Aerobik trening traje 55 minuta i za to vreme potroši se oko 400 kalorija. Odvijaju se u grupi od 15 do 35 osoba, a mogu da učestvuju i muškarci i žene. Počinje se obaveznim zagrevanjem i razgibavanjem mišića, čime se telo priprema za aktivnost. Nakon zagrevanja rade se aerobne vežbe umerenog intenziteta, koje podižu puls na odgovarajući nivo za proces sagorevanja i topljenja masti.",
+        "slika":"page2-img1.jpg"
+    }
+]
