@@ -49,6 +49,7 @@ a.button:hover {
 	background:#d3d1d1;
 	color:#333;
 }
+
 a.link {
 	text-decoration:none;
 	cursor:pointer;
@@ -318,6 +319,10 @@ ul.menu li a:hover, ul.menu li.current a {
 	display:inline-block;
 	margin-top:19px;
 }
+.span_alert{
+	display: none;
+	color: red;
+}
 .search_button {
 	background:#f4f4f4;
 	font-size:14px;
@@ -425,7 +430,7 @@ dl dd a:hover {
 	width:575px;
 	padding-top:10px;
 }
-.btns a {
+.btns button {
 	display:inline-block;
 	margin:0 0px 0 10px;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-kontakt',
@@ -8,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class KontaktComponent implements OnInit {
 
   constructor() { }
+
+  sucessed = false;
+
+  onSubmit(form: NgForm)
+  {
+    this.sucessed = true;
+    
+  }
 
   ngOnInit() {
   }

@@ -1,0 +1,25 @@
+
+button.button {
+	background:#f4f4f4;
+	font-size:14px;
+	line-height:18px;
+	color:#01a5ca;
+	text-transform:uppercase;
+	display:inline-block;
+    padding:12px 16px 13px 16px;
+    border: none;
+}
+button.button:hover {
+	background:#d3d1d1;
+	color:#333;
+}
+.sakriven
+{
+	display: flex;
+	color: red;
+}
+#zaporuku
+{
+	
+	color: red;
+}

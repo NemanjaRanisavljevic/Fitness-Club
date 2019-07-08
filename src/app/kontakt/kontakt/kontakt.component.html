@@ -3,33 +3,38 @@
     <div class="box-shadow">
       <div class="wrap block-2">
         <div class="col-3">
-          <h2><span class="color-1">Find</span> us</h2>
+          <h2><span class="color-1">Kako do</span> nas</h2>
           <div class="map img-border">
             <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
           </div>
           <dl>
-            <dt class="color-1"><strong>8901 Marmora Road,<br>
-              Glasgow, D04 89GR.</strong></dt>
-            <dd><span>Freephone:</span>+1 800 559 6580</dd>
-            <dd><span>Telephone:</span>+1 800 603 6035</dd>
-            <dd><span>Fax:</span>+1 800 889 9898</dd>
-            <dd><span>E-mail:</span><a href="#" class="link">mail@demolink.org</a></dd>
+            <dt class="color-1"><strong>Zdravka Celara 16,<br>
+              Beograd.</strong></dt>
+            <dd><span>Telefon:</span>+381 62 555 666</dd>
+            <dd><span>Fax:</span>+381 239086</dd>
+            <dd><span>E-mail:</span><a href="#" class="link">mail@gmail.com</a></dd>
           </dl>
         </div>
         <div class="col-4">
-          <h2><span class="color-1">Contact</span> form</h2>
-          <form id="form" method="post" action="#">
+          <h2><span class="color-1">Kontakt</span> forma</h2>
+          <span *ngIf="sucessed" class="color-1">Poruka je poslata.</span>
+          <form id="form" (ngSubmit)="onSubmit(f)" #f="ngForm">
             <fieldset>
               <label>
-                <input type="text" value="Name" onBlur="if(this.value=='') this.value='Name'" onFocus="if(this.value =='Name' ) this.value=''">
+                <input type="text" placeholder="Ime" ngModel name="ime" required  #ime="ngModel">
+                <span class="sakriven" *ngIf="!ime.valid && ime.touched">  Ime je obavezno.</span>
               </label>
               <label>
-                <input type="text" value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''">
+                <input type="text" placeholder="Email" ngModel name="email" required email #email="ngModel">
+                <span class="sakriven" *ngIf="!email.valid && email.touched"> Unesite ispravno email adresu.</span>
               </label>
               <label>
-                <textarea onBlur="if(this.value==''){this.value='Message'}" onFocus="if(this.value=='Message'){this.value=''}">Message</textarea>
+                <textarea placeholder="Poruka" ngModel name="poruka" required #poruka="ngModel"></textarea>
+                <span id="zaporuku" *ngIf="!poruka.valid && poruka.touched">Poruka je obavezna.</span>
               </label>
-              <div class="btns"><a href="#" class="button">Clear</a><a href="#" class="button">Send</a></div>
+              <div class="btns"><button class="button" type="reset">Obrisi</button>
+                <button class="button" [disabled]="!f.valid" type="submit" >Posalji</button>
+              </div>
             </fieldset>
           </form>
         </div>

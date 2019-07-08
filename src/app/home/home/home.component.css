@@ -1,4 +1,21 @@
 #sakriven
 {
-	display: none;
+	display: flex;
+	color: red;
 }
+.submit_button {
+	background:#f4f4f4;
+	font-size:14px;
+	line-height:18px;
+	color:#01a5ca;
+	text-transform:uppercase;
+	display:inline-block;
+	border: none;
+	padding:12px 28px 13px 28px;
+	margin:15px 0px 0 0;
+}
+.submit_button:hover {
+	background:#d3d1d1;
+	color:#333;
+}
+

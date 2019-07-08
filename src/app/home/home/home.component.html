@@ -60,12 +60,21 @@
           <div class="col-2">
             
             <div class="form-search">
-              <h2><span class="color-1">Find us</span> near you</h2>
-              <form id="form-search" method="post" action="#">
-                <input type="text" value="Enter your Zip" onBlur="if(this.value=='') this.value='Enter your Zip'" onFocus="if(this.value =='Enter your Zip' ) this.value=''"  />
-                <a href="#" class="search_button">Search</a>
+              <h2><span class="color-1">Pretplati se</span> za popust</h2>
+              <form id="form-search" (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <input type="text" placeholder="Unesi svoj email"  ngModel name="email" required email #email="ngModel"/>
+                <span id="sakriven" *ngIf="!email.valid && email.touched">Unesite ispravno email adresu.</span>
+                
+                <button [disabled]="!f.valid" type="submit" class="submit_button">Posalji</button>
               </form>
             </div>
+
+            <div @fadeout *ngIf="submitted" class="form-search">
+                <h2><span class="color-1">Kod</span> je poslat</h2>
+              <p>na Vasu email adresu: <span class="color-1">{{mail}}</span>. Kod mozete iskoristiti u roku od dva meseca.Kod ostvaruje popust od 20% na mesecni iznos clanarine.</p>
+            </div>
+            
+
           </div>
         </div>
       </div>
