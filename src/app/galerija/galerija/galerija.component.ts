@@ -1,3 +1,4 @@
+import { GalerijaService } from './galerija.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalerijaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:GalerijaService) { }
 
+  trenutna = 'gallery-big-6.jpg';
+  
+  Promeni(slika:any)
+  {
+    this.trenutna = slika;
+  }
+
+
+  slike;
   ngOnInit() {
+    this.service.dohvatiSlike().subscribe(
+      Response => {
+        
+        this.slike = Response;
+      },
+      error => {
+        console.log(error);
+      }
+    ); 
   }
 
 }

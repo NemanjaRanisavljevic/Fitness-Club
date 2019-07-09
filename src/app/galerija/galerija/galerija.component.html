@@ -4,7 +4,7 @@
   <div class="grid_12">
     <div id="slide">
       <div class="gallery">    
-         <img src="../../../assets/images/gallery-big-3.jpg" alt="">
+         <img  src="../../../assets/images/{{trenutna}}" alt="">
       </div>
     </div>
   </div>
@@ -15,14 +15,14 @@
 
   <div class="grid_12 top-1">
     <div class="block-3 box-shadow">
-      <h2 class="p4"><span class="color-1">Photo</span> gallery</h2>
+      <h2 class="p4"><span class="color-1">Slike</span> naseg centra</h2>
       <div class="pag">
         <div class="img-pags">
-          <ul>
+          
             
-            <li><a href="#"><span><img src="../../../assets/images/gallery-big-2.jpg" alt=""></span></a></li>
+            <a *ngFor="let s of slike" (click)="Promeni(s.putanja)"><img src="../../../assets/images/{{ s.putanja}}" alt="{{ s.alt}}"></a>
             
-          </ul>
+          
         </div>
       </div>
     </div>

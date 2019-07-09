@@ -9,7 +9,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
   animations: [
     trigger("fade", [
             transition('void => *', [
-        animate(10000,style({opacity:0}))
+        animate(8000,style({opacity:0}))
       ])
     ])
     
@@ -23,7 +23,7 @@ export class TimetableComponent implements OnInit {
   ngOnInit() {
     this.service.dohvatiRaspored().subscribe(
       Response => {
-        console.log(Response);
+        
         this.raspored = Response;
       },
       error => {
