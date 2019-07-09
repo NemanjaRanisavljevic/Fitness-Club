@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "naslov":"Joga",
+        "vreme":"8:00",
+        "sadrzaj":"Svaki radni dan i subotom za sve one koji hoce da uzivaju u jutarnjim satima."
+    },
+    {
+        "id":2,
+        "naslov":"Aerobik",
+        "vreme":"9:30",
+        "sadrzaj":"Zapocnite dan dobrom energijom."
+    },
+    {
+        "id":3,
+        "naslov":"Cross Fit",
+        "vreme":"11:00",
+        "sadrzaj":"Iskoristite poslednji atom snage u vasem telu, izgradite misicnu masu uz prirodne pokrete."
+    },
+    {
+        "id":4,
+        "naslov":"Teretana sa licnim trenerom",
+        "vreme":"12:30 - 15:00",
+        "sadrzaj":"Razvijaj svoje telo uz najbolje trenere."
+    },
+    {
+        "id":5,
+        "naslov":"Aerobik",
+        "vreme":"15:00",
+        "sadrzaj":"Izbacite losu energiju uz najbolje vezbe."
+    },
+    {
+        "id":6,
+        "naslov":"Joga",
+        "vreme":"17:00",
+        "sadrzaj":"Umorni ste od posla, imali ste los dan na poslu dodjite i opusitete se."
+    },
+    {
+        "id":7,
+        "naslov":"Teretana sa licnim trenerom",
+        "vreme":"17:00 - 20:00",
+        "sadrzaj":"Razvijaj svoje telo uz najbolje trenere."
+    }
+]

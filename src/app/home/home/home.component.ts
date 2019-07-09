@@ -16,7 +16,6 @@ import { NgForm } from '@angular/forms';
       ])
 
     ])
-    
   ]
 })
 export class HomeComponent implements OnInit {

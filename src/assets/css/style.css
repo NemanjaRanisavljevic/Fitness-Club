@@ -139,6 +139,9 @@ ul.list-2 li a:hover {
 .last {
 	margin-right:0px !important;
 }
+.x{
+	width: 47%;
+}
 .img-radius {
 	border-radius:4px;
 }
